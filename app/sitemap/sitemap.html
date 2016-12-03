@@ -1,0 +1,39 @@
+<div ng-controller="SitemapCtrl as Ctrl">
+
+  <div class="container">
+
+    <div class="row">
+        <img class="bannerimg img-rounded img-responsive" src="../images/blueseabanner.jpg">
+    </div>
+
+
+    <div class="row top-buffer">
+      <div class="col-md-2">
+        <div class="list-group">
+          <button type="button" class="list-group-item" ng-class="{active: Ctrl.showTab == 'sitemap'}" ng-click="Ctrl.showTab = 'sitemap'">Site Map</button>
+        </div>
+      </div>
+
+      <div class="col-md-8">
+        <div class="tab-content content">
+          <div id="sitemap" ng-show="Ctrl.showTab == 'sitemap'">
+            <p>This site is organized as follows. You can directly access a section of website by clicking the links. </p>
+
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Schedule</a></li>
+              <li><a href="">Events</a></li>
+            </ul>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+</div>

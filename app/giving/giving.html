@@ -1,0 +1,64 @@
+<div ng-controller="GivingCtrl as Ctrl">
+
+  <div class="container">
+
+    <div class="row">
+        <img class="bannerimg img-rounded img-responsive" src="../images/dovebanner.jpg">
+    </div>
+
+    <div class="row top-buffer">
+      <div class="col-md-2">
+        <div class="list-group">
+          <button type="button" class="list-group-item" ng-class="{active: Ctrl.showTab == 'giving'}" ng-click="Ctrl.showTab = 'giving'">Giving</button>
+        </div>
+      </div>
+
+      <div class="col-md-8">
+        <div class="tab-content content">
+          <div id="giving" ng-show="Ctrl.showTab == 'giving'">
+
+            <div class="alert alert-info" role="alert">
+              <p>We are thankful to all who help support our work.</p>
+            </div>
+
+
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h3 class="panel-title">Volunteer</h3>
+              </div>
+              <div class="panel-body">
+                <p>We have several Volunteer Opportunities available. Please contact us if you are willing to help.</p>
+              </div>
+            </div>
+
+
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h3 class="panel-title">Donate</h3>
+              </div>
+              <div class="panel-body">
+                <p>To make a Donation by check or money order, please mail to:
+                  Ann Arbor Meditation Circle, 2559 Scio Road Dexter, MI, 48130</p>
+              </div>
+            </div>
+
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h3 class="panel-title">Make a Pledge</h3>
+              </div>
+              <div class="panel-body">
+                <p>You can also Pledge for a specific expense like flowers, supplies etc. Please fill out the Pledge Form and send it, along with your contribution to:
+                  Ann Arbor Meditation Circle, 2559 Scio Road Dexter, MI, 48130</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+</div>

@@ -1,0 +1,51 @@
+<div ng-controller="LoginCtrl as ctrl">
+
+  <div class="container">
+    <div class="row">
+        <div class="col-xs-4 col-xs-offset-4">
+            <div class="btn-group">
+                <button type="button" class="btn" ng-class="{active: ctrl.loginTab == 'login'}" ng-click="ctrl.loginTab = 'login'">Login</button>
+                <button type="button" class="btn" ng-class="{active: ctrl.loginTab == 'register'}" ng-click="ctrl.loginTab = 'register'">Register</button>
+            </div>
+        </div>
+    </div>
+    <div class="row top-buffer tab-content content">
+         <div class="col-xs-4 col-xs-offset-4" ng-show="ctrl.loginTab == 'login'">
+             <form>
+                 <div class="form-group">
+                     <label for="email">Email address</label>
+                     <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                     <small id="emailHelp" class="form-text text-muted"></small>
+                 </div>
+                 <div class="form-group">
+                     <label for="password">Password</label>
+                     <input type="password" class="form-control" id="password" placeholder="Password">
+                 </div>
+
+                 <button type="submit" class="btn btn-primary">Submit</button>
+             </form>
+         </div>
+         <div class="col-xs-4 col-xs-offset-4" ng-show="ctrl.loginTab == 'register'">
+             <form>
+                 <div class="form-group">
+                     <label for="email">Email address</label>
+                     <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                     <small id="emailHelp" class="form-text text-muted"></small>
+                 </div>
+                 <div class="form-group">
+                     <label for="password">Password</label>
+                     <input type="password" class="form-control" id="password" placeholder="Password">
+                 </div>
+                 <div class="form-group">
+                     <label for="password2">Re-enter Password</label>
+                     <input type="password" class="form-control" id="password2" placeholder="Re-enter Password">
+                 </div>
+                 <button type="submit" class="btn btn-primary">Submit</button>
+             </form>
+         </div>
+     </div>
+
+  </div>
+
+
+</div>

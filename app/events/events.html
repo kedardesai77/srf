@@ -1,0 +1,63 @@
+<div ng-controller="EventsCtrl as Ctrl">
+
+  <div class="container">
+
+    <div class="row">
+        <img class="bannerimg img-rounded img-responsive" src="../images/lotusbanner.jpg">
+    </div>
+
+
+    <div class="row top-buffer">
+      <div class="col-md-2">
+        <div class="list-group">
+          <button type="button" class="list-group-item" ng-class="{active: Ctrl.showTab == 'weeklySchedule'}" ng-click="Ctrl.showTab = 'weeklySchedule'">Yard Sale</button>
+        </div>
+      </div>
+
+      <div class="col-md-8">
+        <div class="tab-content content">
+          <div id="weeklySchedule" ng-show="Ctrl.showTab == 'weeklySchedule'">
+
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h3 class="panel-title">Yard Sale</h3>
+              </div>
+              <div class="panel-body">
+                <p>We organize several fundraising events throughout the year</p>
+                <p>
+                  New meditation chairs are needed for the chapel. It will cost an estimated $183 per chair. That figure is for a minimum of 30 chairs. 26 are needed for the chapel; some devotees want to order one for home use. The total amount of money needed is $5,490; there is currently $1,335 in the chair fund, leaving $4,155 to be raised.
+                </p>
+                <p>
+                  If you wish to make a donation to the chair fund, whether for a full chair or any amount, please make checks out to: Ann Arbor Meditation Circle, or to AAMC of SRF.
+                </p>
+                <p>
+                  There will be envelopes on the table at the rear of the chapel labeled "Chair Fund", which can be used for cash or checks.
+                  If you are making the donation for a personal chair for home use, please specify.
+                </p>
+              </div>
+            </div>
+
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h3 class="panel-title">Yard Sale Fundraiser for Meditation Chairs</h3>
+              </div>
+              <div class="panel-body">
+                <p>
+                  Stay tuned for the date! A yard sale is planned for early May as a major fundraiser. If you would like to donate an item for this fundraiser, please contact us with item details.
+                </p>
+              </div>
+            </div>
+
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+</div>

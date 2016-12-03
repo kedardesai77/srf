@@ -1,0 +1,185 @@
+<div ng-controller="ScheduleCtrl as Ctrl">
+
+  <div class="container">
+
+
+    <div class="row">
+        <img class="bannerimg img-rounded img-responsive" src="../images/dovebanner.jpg">
+    </div>
+
+
+    <div class="row top-buffer">
+      <div class="col-md-2">
+        <div class="list-group">
+          <button type="button" class="list-group-item" ng-class="{active: Ctrl.showTab == 'weeklySchedule'}" ng-click="Ctrl.showTab = 'weeklySchedule'">Weekly Schedule</button>
+          <button type="button" class="list-group-item" ng-class="{active: Ctrl.showTab == 'monthlySchedule'}" ng-click="Ctrl.showTab = 'monthlySchedule'">Monthly Schedule</button>
+          <button type="button" class="list-group-item" ng-class="{active: Ctrl.showTab == 'readingTopics'}" ng-click="Ctrl.showTab = 'readingTopics'">Reading Topics</button>
+        </div>
+      </div>
+
+      <div class="col-md-8">
+        <div class="tab-content content">
+          <div id="weeklySchedule" ng-show="Ctrl.showTab == 'weeklySchedule'">
+
+
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h3 class="panel-title">Sunday Services</h3>
+              </div>
+              <div class="panel-body">
+                <p>9:30-10:20 a.m. Open meditation* </p>
+                <p>10:30-11:30 a.m. Reading Service </p>
+              </div>
+            </div>
+
+
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h3 class="panel-title">Thursday Services</h3>
+              </div>
+              <div class="panel-body">
+                <p>7:00-7:50 p.m. Open meditation* (recorded music 7:50)  </p>
+                <p>8:00-8:50 p.m. Meditation Service </p>
+                <p>8:50-9:00 p.m. Prayer Service for Healing and Peace </p>
+              </div>
+            </div>
+
+            <p>
+              * During these "open meditation" times, if you enter or depart the chapel after the opening chant, please open and close both doors very slowly and quietly, taking care not to disturb those meditating. If you arrive for one of the formal services after the starting time, please enter during a reading or a chant, on Thursday evening, this would usually mean not later than 8:10 pm.
+            </p>
+
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Second Sunday of the month</h3>
+              </div>
+              <div class="panel-body">
+                <p>11:30 a.m.- 12:00 p.m. Refreshments, Fellowship and Sign-up</p>
+              </div>
+            </div>
+
+
+              <p>In case of inclement weather or schedule questions, please call the chapel voice mail at: 734 662 2202</p>
+
+
+
+
+          </div>
+
+          <div id="monthlySchedule" ng-show="Ctrl.showTab == 'monthlySchedule'">
+            <h3>SPECIAL ACTIVITIES  </h3>
+
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h3 class="panel-title">June</h3>
+              </div>
+              <div class="panel-body">
+                <p>
+                  <label>June 12, Sunday</label>
+                  <p>
+                    Fellowship with Vegetarian Potluck and Reader sign-up after the Readings Service Service
+                  </p>
+                </p>
+              </div>
+            </div>
+
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h3 class="panel-title">July</h3>
+              </div>
+              <div class="panel-body">
+                <p><label>July 10, Sunday</label>
+                  <p>Fellowship and Reader sign-up after the Readings Service</p>
+                </p>
+
+                <p><label>July 24, Sunday</label>
+                <p>Babaji Commemoration: 9:30-10:30 AM.
+                Chanting and Meditation; 10:30-11:30 AM Commemoration Service</p>
+                </p>
+
+              </div>
+            </div>
+
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h3 class="panel-title">August</h3>
+              </div>
+              <div class="panel-body">
+                <p><label>August 14, Sunday</label>
+                <p>Fellowship and Reader sign-up after the Readings Service</p>
+                </p>
+
+                <p><label>August 28, Sunday</label>
+                <p>Janmashtami (Commemoration of Sri Krishna): 9:30-10:30 AM.
+                Chanting and Meditation; 10:30-11:30 AM Commemoration Service</p>
+                </p>
+
+              </div>
+            </div>
+
+
+
+          </div>
+
+          <div id="readingTopics" ng-show="Ctrl.showTab == 'readingTopics'">
+            <h3>Sunday Readings Service Topics from Volumes II  </h3>
+
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h3 class="panel-title">June</h3>
+              </div>
+              <div class="panel-body">
+                <div ng-repeat="ev in Ctrl.juneReadingTopics">
+                  <p><b>{{ev.date | date}}: </b> {{ev.name}}</p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h3 class="panel-title">July</h3>
+              </div>
+              <div class="panel-body">
+                <div ng-repeat="ev in Ctrl.julyReadingTopics">
+                  <p><b>{{ev.date | date}}: </b> {{ev.name}}</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h3 class="panel-title">August</h3>
+              </div>
+              <div class="panel-body">
+                <div ng-repeat="ev in Ctrl.augustReadingTopics">
+                  <p><b>{{ev.date | date}}: </b> {{ev.name}}</p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h3 class="panel-title">September</h3>
+              </div>
+              <div class="panel-body">
+                <div ng-repeat="ev in Ctrl.septemberReadingTopics">
+                  <p><b>{{ev.date | date}}: </b> {{ev.name}}</p>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+</div>

@@ -1,0 +1,171 @@
+<div ng-controller="AboutCtrl as Ctrl">
+
+  <div class="container">
+
+    <div class="row">
+        <img class="bannerimg img-rounded img-responsive" src="../images/meditatebanner.jpg">
+    </div>
+
+
+    <div class="row top-buffer">
+      <div class="col-md-2">
+        <div class="list-group">
+          <button type="button" class="list-group-item" ng-class="{active: Ctrl.showTab == 'aboutAawc'}" ng-click="Ctrl.showTab = 'aboutAawc'">About AAWC</button>
+          <button type="button" class="list-group-item" ng-class="{active: Ctrl.showTab == 'aboutSrf'}" ng-click="Ctrl.showTab = 'aboutSrf'">About SRF</button>
+          <button type="button" class="list-group-item" ng-class="{active: Ctrl.showTab == 'aimsAndIdeals'}" ng-click="Ctrl.showTab = 'aimsAndIdeals'">Aims and Ideals</button>
+          <button type="button" class="list-group-item" ng-class="{active: Ctrl.showTab == 'contact'}" ng-click="Ctrl.showTab = 'contact'">Contact</button>
+          <button type="button" class="list-group-item" ng-class="{active: Ctrl.showTab == 'faq'}" ng-click="Ctrl.showTab = 'faq'">FAQ</button>
+        </div>
+      </div>
+
+      <div class="col-md-8">
+        <div class="tab-content content">
+          <div id="aboutAawc" ng-show="Ctrl.showTab == 'aboutAawc'">
+
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Our History</h3>
+              </div>
+              <div class="panel-body">
+                <p>Hank Roche and Anne Harrell</p>
+
+                <img class="img-rounded" src="images/hank.jpg" alt="hank">
+                <img class="img-rounded" src="images/anne.jpg" alt="anne">
+
+                <p>
+                  After meditating together informally for a couple of years, Anne Harrell and Hank Roche contacted the Self-Realization Mother Center in the fall of 1984 to ascertain if there were enough devotees in the area to start an official meditation Circle. Several people responded to SRF's inquiry of interest and contacted Anne; the Ann Arbor Meditation Circle was born that fall.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div id="aboutSrf" ng-show="Ctrl.showTab == 'aboutSrf'">
+
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">About Self Realization Fellowship</h3>
+              </div>
+              <div class="panel-body">
+                <p>For three quarters of a century, Self-Realization Fellowship, a worldwide religious organization with international headquarters in Los Angeles, has been dedicated to carrying on the spiritual and humanitarian work of Paramahansa Yogananda.Through our worldwide servie, we seek to foster a spirit of greater understanding and goodwill among the diverse people and nations of our global family, and to help those of all cultures and creeds to realize and express more fully in their lives the beauty, nobility, and divinity of the human spirit.</p>
+                <p>Paramahansa Yogananda founded Self-Realization Fellowship in 1920 to make available the universal teachings of Kriya Yoga, a sacred spiritual science originating millenniums ago in India. The society publishes Paramahansa Yogananda's writings, lectures, and recorded talks; oversees temples, retreats, meditation centers, and the monastic communities of the Self-Realization order; and guides the work of the Worldwide Prayer Circle, a network of groups and individuals dedicated to praying for those in need of physical, mental, or spiritual aid and for world peace and harmony.</p>
+                <p>Central to Paramahansa Yogananda's teachings, which embody a complete philosophy and way of life, are scientific techniques of concentration and meditation that lead to the direct personal experience of God. These Yoga Methods quiet body and mind, and make it possible to withdraw one's energy and attention from the usual turbulence of thoughts, emotions, and sensory perceptions. In the clarity of that inner stillness, one comes to experience a deepening interior peace and awareness of God's presence.</p>
+                <p>Instruction in the practice of the techniques taught by Paramahansa Yogananda is presented in the Self Realization Fellowship Lessons, a comprehensive home-study series compiled from his lectures and writings. Covering a wide range of topics, the Lessons offer his inspiring and practical guidance for achieving balanced physical, mental, and spiritual well-being.</p>
+                <p>For more information about Self-Realization Fellowship, please visit website <a href="http://www.yogananda-srf.org">http://www.yogananda-srf.org</a>.</p>
+              </div>
+            </div>
+
+
+          </div>
+
+          <div id="aimsAndGoals" ng-show="Ctrl.showTab == 'aimsAndIdeals'">
+
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Aims and Ideals of Self Realization Fellowship </h3>
+              </div>
+              <div class="panel-body">
+                <ul>
+                  <li>
+                    To disseminate among the nations a knowledge of definite scientific techniques for attaining direct personal experience of God.
+                  </li>
+                  <li>
+                    To teach that the purpose of life is the evolution, through self-effort of man's limited mortal consciousness into God Consciousness; and to this end to establish Self-Realization Fellowship temples for God-communion throughout the world, and to encourage the establishment of individual temples of God in the homes and in the hearts of men.
+                  </li>
+                  <li>
+                    To reveal the complete harmony and basic oneness of original Christianity as taught by Jesus Christ and original Yoga as taught by Bhagavan Krishna; and to show that these principles of truth are the common scientific foundation of all true religions.
+                  </li>
+                  <li>
+                    To point out the one divine highway to which all paths of true religious beliefs eventually lead: the highway of daily, scientific, devotional meditation on God.
+                  </li>
+                  <li>
+                    To liberate man from his threefold suffering: physical disease, mental inharmonies, and spiritual ignorance.
+                  </li>
+                  <li>
+                    To encourage "plain living and high thinking"; and to spread a spirit of brotherhood among all peoples by teaching the eternal basis of their unity: kinship with God.
+                  </li>
+                  <li>
+                    To demonstrate the superiority of mind over body, of soul over mind.
+                  </li>
+                  <li>
+                    To overcome evil by good, sorrow by joy, cruelty by kindness, ignorance by wisdom.
+                  </li>
+                  <li>
+                    To unite science and religion through realization of the unity of their underlying principles.
+                  </li>
+                  <li>
+                    To advocate cultural and spiritual understanding between East and West, and the exchange of their finest distinctive features.
+                  </li>
+                  <li>
+                    To serve mankind as one's larger Self.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
+          <div id="contact" ng-show="Ctrl.showTab == 'contact'">
+
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Correspondence address</h3>
+              </div>
+              <div class="panel-body">
+                <p>2559 Scio Road</p>
+                <p>Dexter, MI, 48130 </p>
+              </div>
+            </div>
+
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Chapel address</h3>
+              </div>
+              <div class="panel-body">
+                <p><a href="http://www.google.com/maps?q=1829+W+Stadium+Blvd,+Ann+Arbor,+Michigan+48103,+USA&ie=UTF8&om=1&z=16&ll=42.268862,-83.771288&spn=0.006875,0.021629&iwloc=addr">View map</a> (Opens in a new window)</p>
+                <p>1829 West Stadium Boulevard at Pauline</p>
+                <p>Suite 100 </p>
+                <p>Ann Arbor, MI, 48103 </p>
+              </div>
+            </div>
+
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Chapel Telephone</h3>
+              </div>
+              <div class="panel-body">
+                <p>734 662 2202</p>
+              </div>
+            </div>
+
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Email</h3>
+              </div>
+              <div class="panel-body">
+                <p>aamcanne@comcast.net</p>
+                <p>aamcanne@comcast.net</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div id="faq" ng-show="Ctrl.showTab == 'faq'">
+
+            <div class="alert alert-info">
+              <p>Coming Soon .............</p>
+            </div>
+
+          </div>
+
+          </div>
+
+
+        </div>
+
+    </div>
+
+
+  </div>
+
+
+</div>

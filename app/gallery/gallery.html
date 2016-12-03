@@ -1,0 +1,35 @@
+<div ng-controller="GalleryCtrl as Ctrl">
+
+  <div class="container">
+
+    <div class="row">
+        <img class="bannerimg img-rounded img-responsive" src="../images/duckbanner.jpg">
+    </div>
+
+
+    <div class="row top-buffer">
+      <div class="col-md-2">
+        <div class="list-group">
+          <button type="button" class="list-group-item" ng-class="{active: Ctrl.showTab == 'aamc'}" ng-click="Ctrl.showTab = 'aamc'">AAMC</button>
+          <button type="button" class="list-group-item" ng-class="{active: Ctrl.showTab == 'srf'}" ng-click="Ctrl.showTab = 'srf'">SRF</button>
+        </div>
+      </div>
+
+      <div class="col-md-8">
+        <div class="tab-content content">
+          <div id="aamc" class="alert alert-info" ng-show="Ctrl.showTab == 'aamc'">
+            <p>SRF Picture Gallery coming soon..... </p>
+          </div>
+          <div id="srf" class="alert alert-info" ng-show="Ctrl.showTab == 'srf'">
+            <p>SRF Picture Gallery coming soon..... </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+</div>
